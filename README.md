@@ -1,9 +1,7 @@
-
 # Open source Kahoot alternative
 
 This is an open source Kahoot alternative , a game-based learning platform that brings engagement and fun at school, work, and at home.
 This project aims to provide similar functionality to Kahoot while being customizable and extensible for various educational and entertainment purposes.
-
 
 1. The host starts the game
 1. Players join the game
@@ -11,16 +9,16 @@ This project aims to provide similar functionality to Kahoot while being customi
 1. Players answer the questions
 1. Results are shown
 
+## Built With
 
-##  Built With
-* [Nextjs](https://nextjs.org/)
-* [Supabase](https://supabase.com/)
-* [Tailwind CSS](https://tailwindcss.com/)
-
+- [Nextjs](https://nextjs.org/)
+- [Supabase](https://supabase.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Run Locally
+
 ```sh
-# Install dependencies 
+# Install dependencies
 
 npm install
 
@@ -28,11 +26,19 @@ npm install
 
 supabase start
 
+# setup database
+# create an .env.local file in root with this content
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+
+# find the supabase url and key with
+supabase status
+
 # Start Next.js locally
 
 npm run dev
 
-# Access app in your web browser at `http://localhost:3000`. 
+# Access app in your web browser at `http://localhost:3000`.
 
 ```
 
@@ -46,7 +52,6 @@ Access /host to join as a host.
 
 [read more on generating types](https://supabase.com/docs/guides/api/rest/generating-types)
 
-
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute, please follow these guidelines:
@@ -58,5 +63,5 @@ We welcome contributions from the community! If you'd like to contribute, please
 5. Create a new Pull Request.
 
 ## License
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
 
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
